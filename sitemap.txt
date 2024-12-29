@@ -1,4 +1,7 @@
-http://example.com/2024/12/29/windows%E5%AE%89%E8%A3%85nvm/
-http://example.com/2024/12/29/hexo-%E6%96%87%E7%AB%A0/
 http://example.com/2024/12/29/hello-world/
+http://example.com/2024/12/29/hexo-%E6%96%87%E7%AB%A0/
+http://example.com/2024/12/29/windows%E5%AE%89%E8%A3%85nvm/
 http://example.com/
+http://example.com/tags/%E5%89%8D%E7%AB%AF/
+http://example.com/tags/Java/
+http://example.com/tags/%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/
