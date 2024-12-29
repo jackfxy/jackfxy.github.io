@@ -13,7 +13,7 @@
   
   <title>
     
-      windows安装nvm 
+      hexo 文章 
       
       
       |
@@ -154,179 +154,22 @@
   <!-- 文章内容页 url形式：https://yoursite/文章标题/ -->
   <div class="container post-details" id="post-details">
     <div class="post-content">
-      <div class="post-title">windows安装nvm</div>
+      <div class="post-title">hexo 文章</div>
       <div class="post-attach">
         <span class="post-pubtime">
           <i class="iconfont icon-updatetime mr-10" title="更新时间"></i>
-          2024-12-29 22:32:50
+          2024-12-29 22:32:21
         </span>
         
       </div>
       <div class="markdown-body">
-        <h3 id="环境变量配置"><a href="#环境变量配置" class="headerlink" title="环境变量配置"></a>环境变量配置</h3><p>本机已经下载过nvm了，直接对现有的nvm设置环境变量，即可使用。</p>
-<p>1.环境变量添加：</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">NVM_HOME:E:\Java-software\nvm</span><br><span class="line">NVM_SYMLINK:E:\Java-software\nodejs-nvm</span><br></pre></td></tr></table></figure>
-
-<p><img src="https://github.com/jackfxy/hexo-images/raw/main/hexo-blog-images/8ae1a9f604528d96dabdc684a0989f56.png" alt="image-20241229185918341"></p>
-<p><img src="https://github.com/jackfxy/hexo-images/raw/main/hexo-blog-images/image-20241229185918341.png" alt="image-20241229185918341"></p>
-<p><img src="https://github.com/jackfxy/hexo-images/raw/main/hexo-blog-images/image-20241229190636325.png" alt="image-20241229190636325"></p>
-<p>2.配置镜像源</p>
-<p>打开安装目录下的setting.txt，写入：</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">root: E:\Java-software\nvm</span><br><span class="line">path: E:\Java-software\nodejs-nvm</span><br><span class="line">node_mirror: https://npmmirror.com/mirrors/node/</span><br><span class="line">npm_mirror: https://npmmirror.com/mirrors/npm/</span><br></pre></td></tr></table></figure>
-
-<img src="https://github.com/jackfxy/hexo-images/raw/main/hexo-blog-images/image-20241229190855295.png" alt="image-20241229190855295" style="zoom:67%;" />
-
-<img src="https://github.com/jackfxy/hexo-images/raw/main/hexo-blog-images/image-20241229190830636.png" alt="image-20241229190830636" style="zoom:67%;" />
-
-
-
-<p>测试：</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nvm --verison</span><br></pre></td></tr></table></figure>
-
-<p><img src="https://github.com/jackfxy/hexo-images/raw/main/hexo-blog-images/image-20241229185815659.png" alt="image-20241229185815659"></p>
-<p>3.查看已安装的nodejs版本：</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nvm ls</span><br></pre></td></tr></table></figure>
-
-<p><img src="https://github.com/jackfxy/hexo-images/raw/main/hexo-blog-images/image-20241229190006828.png" alt="image-20241229190006828"></p>
-<p>3.安装指定版本nodejs：nvm install 版本号， 例如：nvm install 16.20.0</p>
-<p>4.安装后，需要指定使用哪个版本的nodejs：nvm use 版本号 ，例如：nvm use 16.20.0，使用前可以先查看我们安装了哪些nodejs版本，然后指定使用，指定后，可再次查看nvm ls，前面带*号的即为在用版本。</p>
-<h4 id="六、Nvm常用指令："><a href="#六、Nvm常用指令：" class="headerlink" title="六、Nvm常用指令："></a>六、Nvm常用指令：</h4><ul>
-<li>【查看版本】：</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th>命令</th>
-<th>说明</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>nvm version</td>
-<td>查看nvm版本</td>
-</tr>
-<tr>
-<td>nvm ls</td>
-<td>查看所有已经安装的Nodejs版本</td>
-</tr>
-<tr>
-<td>nvm list installed</td>
-<td>查看所有已经安装的Nodejs版本</td>
-</tr>
-<tr>
-<td>nvm ls available</td>
-<td>查看运程线上所有版本(列出所有可以安装的node版本号)</td>
-</tr>
-<tr>
-<td>nvm root</td>
-<td>查看nvm安装路径</td>
-</tr>
-<tr>
-<td>nvm arch</td>
-<td>查看节点是否以32位或64位模式运行</td>
-</tr>
-<tr>
-<td>nvm current</td>
-<td>查看当前node版本</td>
-</tr>
-<tr>
-<td>nvm proxy</td>
-<td>查看设置与代理</td>
-</tr>
-</tbody></table>
-<ul>
-<li>【安装版本】：</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th>命令</th>
-<th>说明</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>nvm install latest</td>
-<td>安装最新稳定版Nodejs</td>
-</tr>
-<tr>
-<td>nvm install 12.18.0</td>
-<td>安装指定版本</td>
-</tr>
-<tr>
-<td>nvm uninstall 12.18.0</td>
-<td>卸载指定 12.18.0版本</td>
-</tr>
-</tbody></table>
-<ul>
-<li>【切换版本】：</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th>命令</th>
-<th>说明</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>nvm use 版本号</td>
-<td>切换版本（这个是全局的）</td>
-</tr>
-<tr>
-<td>nvm use 12.18.0</td>
-<td>切换到2.18.0版本</td>
-</tr>
-</tbody></table>
-<ul>
-<li>【其他命令】：</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th>命令</th>
-<th>说明</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>nvm alias default node</td>
-<td>设置默认版本为最新版本</td>
-</tr>
-<tr>
-<td>nvm on</td>
-<td>启用node.js版本管理</td>
-</tr>
-<tr>
-<td>nvm off</td>
-<td>禁用node.js版本管理</td>
-</tr>
-<tr>
-<td>nvm proxy [url]</td>
-<td>设置用于下载的代理。将[url]留空以查看当前代理。 将[url]设置为“无”以删除代理</td>
-</tr>
-</tbody></table>
-<h4 id="七、可能遇到的问题："><a href="#七、可能遇到的问题：" class="headerlink" title="七、可能遇到的问题："></a>七、可能遇到的问题：</h4><h5 id="1-nvm-use-报错-exit-status-1-��u���㹻��E��ִ�д˲�����-解决"><a href="#1-nvm-use-报错-exit-status-1-��u���㹻��E��ִ�д˲�����-解决" class="headerlink" title="1. nvm use 报错 exit status 1: ��û���㹻��Ȩ��ִ�д˲����� 解决"></a>1. nvm use 报错 exit status 1: ��û���㹻��Ȩ��ִ�д˲����� <strong>解决</strong></h5><p>开发中切换不同node版本，使用nvm use时报错 exit status 1: ��û���㹻��Ȩ��ִ�д˲����� ， 如下如所示：</p>
-<p>以管理员身份运行命令提示符，再使用nvm use即可解决上述问题。</p>
-<img src="https://github.com/jackfxy/hexo-images/raw/main/hexo-blog-images/8ae1a9f604528d96dabdc684a0989f56.png" alt="在这里插入图片描述" style="zoom:67%;" />
-
-
-
-<h5 id="2-安装依赖-npm-install-idealTree-lib-sill-idealTree-buildDeps-卡着不动"><a href="#2-安装依赖-npm-install-idealTree-lib-sill-idealTree-buildDeps-卡着不动" class="headerlink" title="2.安装依赖 npm install idealTree:lib: sill idealTree buildDeps 卡着不动"></a>2.安装依赖 npm install idealTree:lib: sill idealTree buildDeps 卡着不动</h5><p>1、执行命令</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm config get userconfig</span><br></pre></td></tr></table></figure>
-
-<p>查看配置文件所在位置，将其删除。</p>
-<p>2、执行</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm cache clean --force</span><br></pre></td></tr></table></figure>
-
-<p>更新缓存，可能执行会出错，他会给出另外一个命令，执行就可以了。</p>
-<p>3、设置镜像站点</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm config set registry https://registry.npmmirror.com</span><br></pre></td></tr></table></figure>
-
-<p>4、最后在执行 <code>npm install</code> 一切就都快起来了。</p>
-
+        
       </div>
       
         <div class="prev-or-next">
           <div class="post-foot-next">
             
-              <a href="/2024/12/29/hexo-%E6%96%87%E7%AB%A0/" target="_self">
+              <a href="/2024/12/29/hello-world/" target="_self">
                 <i class="iconfont icon-chevronleft"></i>
                 <span>上一页</span>
               </a>
@@ -335,34 +178,22 @@
           <div class="post-attach">
             <span class="post-pubtime">
               <i class="iconfont icon-updatetime mr-10" title="更新时间"></i>
-              2024-12-29 22:32:50
+              2024-12-29 22:32:21
             </span>
             
           </div>
           <div class="post-foot-prev">
+            
+              <a href="/2024/12/29/windows%E5%AE%89%E8%A3%85nvm/" target="_self">
+                <span>下一页</span>
+                <i class="iconfont icon-chevronright"></i>
+              </a>
             
           </div>
         </div>
       
     </div>
     
-  <div id="btn-catalog" class="btn-catalog">
-    <i class="iconfont icon-catalog"></i>
-  </div>
-  <div class="post-catalog hidden" id="catalog">
-    <div class="title">目录</div>
-    <div class="catalog-content">
-      
-        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E9%85%8D%E7%BD%AE"><span class="toc-text">环境变量配置</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%85%AD%E3%80%81Nvm%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4%EF%BC%9A"><span class="toc-text">六、Nvm常用指令：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%B8%83%E3%80%81%E5%8F%AF%E8%83%BD%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98%EF%BC%9A"><span class="toc-text">七、可能遇到的问题：</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#1-nvm-use-%E6%8A%A5%E9%94%99-exit-status-1-%EF%BF%BD%EF%BF%BDu%EF%BF%BD%EF%BF%BD%EF%BF%BD%E3%B9%BB%EF%BF%BD%EF%BF%BDE%EF%BF%BD%EF%BF%BD%D6%B4%EF%BF%BD%D0%B4%CB%B2%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD-%E8%A7%A3%E5%86%B3"><span class="toc-text">1. nvm use 报错 exit status 1: ��û���㹻��Ȩ��ִ�д˲����� 解决</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2-%E5%AE%89%E8%A3%85%E4%BE%9D%E8%B5%96-npm-install-idealTree-lib-sill-idealTree-buildDeps-%E5%8D%A1%E7%9D%80%E4%B8%8D%E5%8A%A8"><span class="toc-text">2.安装依赖 npm install idealTree:lib: sill idealTree buildDeps 卡着不动</span></a></li></ol></li></ol></li></ol>
-      
-    </div>
-  </div>
-
-  
-<script src="/js/catalog.js"></script>
-
-
-
 
     
       <div class="comments-container">
@@ -641,12 +472,12 @@
       </a>
       <div class="share-content hidden">
         
-          <a class="share-item" href="https://twitter.com/intent/tweet?text=' + windows%E5%AE%89%E8%A3%85nvm + '&url=' + http%3A%2F%2Fexample.com%2F2024%2F12%2F29%2Fwindows%25E5%25AE%2589%25E8%25A3%2585nvm%2F + '" target="_blank" title="Twitter">
+          <a class="share-item" href="https://twitter.com/intent/tweet?text=' + hexo%20%E6%96%87%E7%AB%A0 + '&url=' + http%3A%2F%2Fexample.com%2F2024%2F12%2F29%2Fhexo-%25E6%2596%2587%25E7%25AB%25A0%2F + '" target="_blank" title="Twitter">
             <i class="iconfont icon-twitter"></i>
           </a>
         
         
-          <a class="share-item" href="https://www.facebook.com/sharer.php?u=http://example.com/2024/12/29/windows%E5%AE%89%E8%A3%85nvm/" target="_blank" title="Facebook">
+          <a class="share-item" href="https://www.facebook.com/sharer.php?u=http://example.com/2024/12/29/hexo-%E6%96%87%E7%AB%A0/" target="_blank" title="Facebook">
             <i class="iconfont icon-facebooksquare"></i>
           </a>
         

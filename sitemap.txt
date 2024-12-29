@@ -1,3 +1,4 @@
 http://example.com/2024/12/29/windows%E5%AE%89%E8%A3%85nvm/
+http://example.com/2024/12/29/hexo-%E6%96%87%E7%AB%A0/
 http://example.com/2024/12/29/hello-world/
 http://example.com/
